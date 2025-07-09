@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEETLEJUICE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h4{
+            color: green;
+        }
+        h3 {
+            color: #b84ab2
+        }
+
+        li {
+            color: rgb(0, 0, 0);
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+        }
+
+        h2 {
+            color: rgb(34, 83, 34)
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header,
+        footer {
+            background-color: #000000;
+            color: rgb(38, 182, 69);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .welcome,
+        .powers,
+        .origin,
+        .gallery {
+            background-color: #b839a7f3;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        @media (min-width: 768px) {
+            main {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>BEETLEJUICE</h1>
+    </header>
+
+    <nav class="text-center py-2 " style="background-color: #9f32b4; color: rgb(255, 255, 255);">
+        <strong>Introducción | Capacidades | Origen | Archivo visual</strong>
+    </nav>
+
+    <main>
+        <aside class="sidebar bg-light p-3 rounded">
+            <h3>ÍNDICE DE CONTENIDOS</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#pres">Introducción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#powers mb-4">Capacidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#origin mb-4">Origen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Archivo visual</a>
+                </li>
+            </ul>
+            <!-- <ul>
+        <li><a href="#pres">Introducción</a></li>
+        <li><a href="#powers mb-4">Capacidades</a></li>
+        <li><a href="#origin mb-4">Origen</a></li>
+        <li><a href="#gallery">Archivo visual</a></li>
+      </ul> -->
+        </aside>
+
+        <section class="content">
+            <!-- Bienvenida -->
+            <div class="welcome mb-4">
+                <h2>¡Conoce a Beetlejuice!</h2>
+                <p>Beetlejuice, cuyo verdadero nombre es Betelgeuse, es un espíritu caótico del más allá que trabaja
+                    como "bio-exorcista", ayudando a los muertos a echar a los vivos de sus casas. Cuando una pareja de
+                    fantasmas no logra asustar a los nuevos inquilinos de su hogar, recurren a Beetlejuice para que los
+                    ayude. Sin embargo, su naturaleza impredecible y peligrosa desata un caos que pone en riesgo a
+                    todos, especialmente a Lydia, una joven capaz de ver fantasmas. Finalmente, logran detenerlo
+                    diciendo su nombre tres veces, lo que lo envía de regreso al mundo de los muertos.
+
+                </p>
+            </div>
+
+            <!-- Habilidades -->
+            <div class="powers mb-4" id="powers mb-4">
+                <h2>Capacidades</h2>
+                <ul>
+                    <li><strong>Transformación física:
+                        </strong> Puede cambiar de forma, tamaño, y convertirse en monstruos, serpientes o versiones
+                        grotescas de sí mismo.</li>
+                    <li><strong>Manipulación del entorno:</strong> Puede hacer que objetos cobren vida, cambiar la
+                        arquitectura de espacios, teletransportarse o alterar la gravedad.</li>
+                    <li><strong>Invocación de ilusiones:</strong> Puede crear situaciones falsas o confundir a los vivos
+                        con escenarios surrealistas.</li>
+                    <li><strong>Inmortalidad:</strong> Como entidad del más allá, no puede morir, aunque puede ser
+                        castigado o desterrado por otras fuerzas sobrenaturales.</li>
+                    <li><strong>Invocación limitada:</strong> Solo puede entrar al mundo de los vivos si alguien lo
+                        invoca tres veces, y puede ser enviado de regreso diciendo su nombre otras tres veces.</li>
+                </ul>
+            </div>
+
+            <!-- Historia -->
+            <div class="origin mb-4" id="origin mb-4">
+                <h2>Origen</h2>
+                <p>
+                    Beetlejuice es un espíritu maligno, un "bio-exorcista" freelance cuya especialidad es asustar a los
+                    vivos para echarlos de casas embrujadas.
+                    <li>
+                        Aparece en la película cuando una pareja de fantasmas, Adam y Barbara Maitland, trata de echar a
+                        una
+                        familia viva de su antigua casa.</li>
+                    <li>
+                        El nombre "Betelgeuse" proviene de la estrella real del mismo nombre en la constelación de
+                        Orión.</li>
+                    <li>
+                        Fue un humano que murió hace siglos, pero en su forma actual habita en el "Mundo de los
+                        Muertos",
+                        una especie de burócrata mágico que puede romper reglas del más allá.</li>
+                    <li>
+                        Es convocado cuando alguien dice su nombre tres veces: "Beetlejuice, Beetlejuice, Beetlejuice".
+                    </li>
+                    <li>
+                        En la versión animada, se vuelve un "antihéroe caótico" y su relación con Lydia (la chica
+                        gótica) es
+                        más amistosa y divertida que en la película.</li>
+                </p>
+            </div>
+
+            <!-- Galería -->
+            <div class="gallery" id="gallery">
+                <h2>Archivo Visual</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://media.s-bol.com/mzkGZ6n7Ap93/Z6o0yNQ/550x780.jpg">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/b/ba/Beetlejuice_Beetlejuice_poster.jpg">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://amctheatresshop.com/cdn/shop/files/BJ-STAN_5474_17_MF1.jpg?v=1725271142" >
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>&copy; 2025 - BEETLEJUICE</h4>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
